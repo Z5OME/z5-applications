@@ -9,7 +9,7 @@ A comprehensive Discord bot for managing job applications and announcements with
 - **Review System**: Staff can review, accept, or reject applications
 - **Role Management**: Automatically assign roles upon application acceptance
 - **Configurable**: Fully customizable job types and settings
-- **Multi-language Support**: Supports Arabic and English content
+- **Multi-language Support**: Supports multiple languages with English as default
 
 ## 🚀 Quick Start
 
@@ -81,7 +81,7 @@ Posts a job announcement with an apply button.
 **Example:**
 
 ```
-/announce-job job_key:admin_app message:نحن نبحث عن مديرين جدد!
+/announce-job job_key:admin_app message:We are looking for new administrators!
 ```
 
 ## ⚙️ Configuration
@@ -103,8 +103,8 @@ cp config/config.example.js config/config.js
 applications: [
   {
     jobKey: "admin_app",
-    title: "طلب الإنضمام للإدارة",
-    description: "استمارة التقديم للانضمام إلى فريق الإدارة",
+    title: "Admin Application",
+    description: "Application form to join the administration team",
     announcementChannelId: "channel_id_here",
     reviewChannelId: "review_channel_id_here",
     roles: {

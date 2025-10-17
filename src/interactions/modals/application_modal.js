@@ -51,13 +51,11 @@ module.exports = {
             new ButtonBuilder()
                 .setCustomId(`review_accept:${jobKey}:${interaction.user.id}`)
                 .setLabel('Accept')
-                .setStyle(ButtonStyle.Secondary) // من غير لون
-                .setEmoji('<:ONE_C2:1427256483451633806>'), // اضف emoji مخصص هنا (غير الايدي بالخاص بك)
+                .setStyle(ButtonStyle.Secondary), // Neutral color
             new ButtonBuilder()
                 .setCustomId(`review_reject:${jobKey}:${interaction.user.id}`)
                 .setLabel('Reject')
-                .setStyle(ButtonStyle.Secondary) // من غير لون
-                .setEmoji('<:ONE__xWrong1:1427256694014218251>') // اضف emoji مخصص هنا (غير الايدي بالخاص بك)
+                .setStyle(ButtonStyle.Secondary) // Neutral color
         );
 
         await channel.send({ embeds: [embed], components: [components] });

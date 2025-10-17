@@ -16,8 +16,8 @@ module.exports = {
     applications: [
         {
             jobKey: "admin_app", // Unique identifier for this application type
-            title: "طلب الإنضمام للإدارة", // Application title (Arabic: Admin Application)
-            description: "استمارة التقديم للانضمام إلى فريق الإدارة.", // Description
+            title: "Admin Application", // Application title
+            description: "Application form to join the administration team.", // Description
             announcementMessage: "||@everyone||", // Message to send with announcement
             announcementChannelId: "YOUR_ANNOUNCEMENT_CHANNEL_ID", // Specific channel for this job announcement
             reviewChannelId: "YOUR_REVIEW_CHANNEL_ID", // Channel where applications will be reviewed
@@ -40,12 +40,12 @@ module.exports = {
                     thumbnailUrl: "https://example.com/thumbnail.png", // Small image in top right
                     imageUrl: "https://example.com/image.png", // Large image at bottom
                     author: { 
-                        name: "اسم السيرفر", // Server name
+                        name: "Server Name", // Server name
                         iconUrl: "https://example.com/icon.png", 
                         url: "https://example.com" 
                     },
                     footer: { 
-                        text: "اسم السيرفر © 2025", // Footer text
+                        text: "Server Name © 2025", // Footer text
                         iconUrl: "https://example.com/footer-icon.png" 
                     }
                 },
@@ -54,12 +54,12 @@ module.exports = {
                     thumbnailUrl: "https://example.com/thumbnail.png",
                     imageUrl: "https://example.com/image.png",
                     author: { 
-                        name: "فورم التقديم علي الادارة", // Application form title
+                        name: "Administration Application Form", // Application form title
                         iconUrl: "https://example.com/icon.png", 
                         url: "https://example.com" 
                     },
                     footer: { 
-                        text: "اسم السيرفر © 2025", 
+                        text: "Server Name © 2025", 
                         iconUrl: "https://example.com/footer-icon.png" 
                     }
                 }
@@ -69,25 +69,25 @@ module.exports = {
             fields: [
                 { 
                     id: "full_name", 
-                    label: "اسمك بالكامل", // Your full name
+                    label: "Your Full Name", // Your full name
                     style: 1, // 1 = Short text input, 2 = Paragraph
                     required: true 
                 },
                 { 
                     id: "age", 
-                    label: "عمرك", // Your age
+                    label: "Your Age", // Your age
                     style: 1, 
                     required: true 
                 },
                 { 
                     id: "reason", 
-                    label: "لماذا تريد الانضمام للإدارة؟", // Why do you want to join the administration?
+                    label: "Why do you want to join the administration?", // Why do you want to join the administration?
                     style: 2, 
                     required: true 
                 },
                 { 
                     id: "previous_exp", 
-                    label: "هل لديك خبرة سابقة بالإدارة؟ (اذكر التفاصيل)", // Do you have previous admin experience?
+                    label: "Do you have previous admin experience? (Provide details)", // Do you have previous admin experience?
                     style: 2, 
                     required: false 
                 }
@@ -96,14 +96,14 @@ module.exports = {
             // Direct message settings
             dmOnAccept: {
                 enabled: true,
-                message: "تهانينا! تم قبول طلبك للإنضمام إلى الإدارة." // Congratulations! Your application has been accepted.
+                message: "Congratulations! Your application to join the administration has been accepted." // Congratulations! Your application has been accepted.
             }
         }
         
         // Add more application types here if needed
         // {
         //     jobKey: "moderator_app",
-        //     title: "طلب الإنضمام للمشرفين",
+        //     title: "Moderator Application",
         //     ...
         // }
     ]
